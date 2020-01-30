@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<metadata xmlns="http://www.demandware.com/xml/impex/metadata/2006-10-31">
+    <type-extension type-id="SitePreferences">
+        <custom-attribute-definitions>
+            <attribute-definition attribute-id="shieldSquareAdvanceConfig">
+                <display-name xml:lang="x-default">Shield Square Advance Config JSON</display-name>
+                <type>text</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="shieldSquareConfig">
+                <display-name xml:lang="x-default">Shield Square Config JSON</display-name>
+                <type>text</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+            </attribute-definition>
+            <attribute-definition attribute-id="shieldSquareSubscriberID">
+                <display-name xml:lang="x-default">Shield Square Subscriber ID</display-name>
+                <type>string</type>
+                <mandatory-flag>false</mandatory-flag>
+                <externally-managed-flag>false</externally-managed-flag>
+                <min-length>0</min-length>
+            </attribute-definition>
+         </custom-attribute-definitions>
+        <group-definitions>
+           <attribute-group group-id="ShieldSquare">
+                <display-name xml:lang="x-default">Shield Square Configuration</display-name>
+                <attribute attribute-id="shieldSquareConfig"/>
+                <attribute attribute-id="shieldSquareAdvanceConfig"/>
+                <attribute attribute-id="shieldSquareSubscriberID"/>
+            </attribute-group>
+        </group-definitions>
+    </type-extension>
+</metadata>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jobs xmlns="http://www.demandware.com/xml/impex/jobs/2015-07-01">
+    <job job-id="ShieldSquareUpdateConfig" priority="0">
+        <description/>
+        <parameters/>
+        <split sequential="false">
+            <contexts template-ref="template_38">
+                <context site-id="RefArch"/>
+                <context site-id="SiteGenesis"/>
+            </contexts>
+            <flow-template template-id="template_38">
+                <step step-id="ShieldSquareConfig" type="custom.UpdateSQServerConfig" enforce-restart="false">
+                    <description/>
+                    <parameters/>
+                </step>
+            </flow-template>
+        </split>
+        <rules/>
+        <triggers>
+            <run-recurring enabled="true">
+                <recurrence>
+                    <date-from>2019-12-23Z</date-from>
+                    <date-to>2020-11-30Z</date-to>
+                    <start-time>17:29:29.000Z</start-time>
+                    <interval>5m</interval>
+                    <day-of-week>
+                        <weekday>Thursday</weekday>
+                        <weekday>Monday</weekday>
+                        <weekday>Friday</weekday>
+                        <weekday>Wednesday</weekday>
+                        <weekday>Tuesday</weekday>
+                    </day-of-week>
+                </recurrence>
+            </run-recurring>
+        </triggers>
+    </job>
+
+</jobs>
